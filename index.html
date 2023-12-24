@@ -4,8 +4,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flightradar Website Design</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
   </head>
   <body>
-    <section class="header"></section>
-  </body>
+    <section class="header">
+      <nav>
+        <a href = "index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id = "navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">COURSE</a></li>
+              <li><a href="">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+<div class="text-box">
+  <h1>The Engineering Jewel</h1>
+  <p>
+    Explore the F-35, a pinnacle of aerospace innovation.<br>
+    Seamlessly blending stealth and advanced technology for unparalleled performance in air superiority and ground missions.
+  </p>
+  <a href="" class = "hero-btn">Introducing you to the F35</a>
+</div>
+
+</section>
+
+<!--- Course ---->
+<section class = "course">
+  <h1>Courses we offer</h1>
+  <p>
+    We offer a wide range of courses to help you get started in the aviation industry.
+  </p>
+
+  <div class = "row">
+    <div class="course-col">
+      <h3>Private Pilot License</h3>
+      <p>
+        The Private Pilot License is the first step towards your career in aviation. 
+        It allows you to fly an aircraft for recreational purposes.
+      <p>
+    </div>
+
+    <div class="course-col">
+      <h3>Commercial Pilot License</h3>
+      <p>
+        The Commercial Pilot License is the second step towards your career in aviation. 
+        It allows you to fly an aircraft for commercial purposes.
+      <p>
+        
+    </div>
+
+    <div class="course-col">
+      <h3>Fighter Pilot License</h3>
+      <p>
+        The Fighter License is the third step towards your career in aviation. 
+        It allows you to fly an aircraft for military purposes.
+      <p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!--- Campus ---->
+<section class="campus">
+  <h1>Our Campus</h1>
+  <p>
+    We have a wide range of campuses all over the world.
+  </p>
+
+  <div class="row">
+    <div class="campus-col">
+      <img src="images/coruna.jpg">
+      <div class="layer">
+        <h3>Coruña</h3>
+      </div>
+    </div>
+
+    <div class="campus-col">
+      <img src="images/vigo.jpg">
+      <div class="layer">
+        <h3>Vigo</h3>
+      </div>
+    </div>
+
+    <div class="campus-col">
+      <img src="images/santiago.jpg">
+      <div class="layer">
+        <h3>Santiago</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!----Facilities ---->
+ 
+
+<!--- Facilities ---->
+<section class="facilities">
+  <h1>Our facilites</h1>
+  <p>We have lots of facilities for you</p>
+
+  <div class="row">
+    <div class="facilities-col">
+      <img src="images/library.jpg">
+      <h3>World Class Library</h3>
+      <p>
+        Our library is open 24/7 for our students. 
+        We have a wide range of books and magazines for you to read.
+      </p>
+    </div>
+
+    <div class="facilities-col">
+      <img src="images/vehicles.jpg">
+      <h3>Training vehicles</h3>
+      <p>
+        We have a wide range of aircrafts for you to train on.
+      </p>
+    </div>
+
+    <div class="facilities-col">
+      <img src="images/class.jpg">
+      <h3>World Class</h3>
+      <p>
+        We dispose of a class with the latest technologies.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!------ Javascript for Toggle menu ------>
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
+
+</body>
 </html>
