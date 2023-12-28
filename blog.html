@@ -74,11 +74,11 @@
       <div class="comment-box">
 
         <h3> Leave a comment</h3>
-        <form class="comment-form">
-          <input type="text" placeholder="Enter Name">
-          <input type="email" placeholder="Enter Email">
-          <textarea rows="5" placeholder="Your Comment"></textarea>
-          <button type="submit" class = "hero-btn red-btn">POST COMMENT</button>
+        <form class="comment-form" action="https://formspree.io/f/xgegewda" method="POST">
+          <input type="text" name="name" placeholder="Enter Name">
+          <input type="email" name="_replyto" placeholder="Enter Email">
+          <textarea rows="5" name="comment" placeholder="Your Comment"></textarea>
+          <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
         </form>
       </div>
     </div>
