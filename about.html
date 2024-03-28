@@ -58,15 +58,44 @@
 </section>
 
 
-<! --- CODIGO NUEVO ---->
-<section class="ods">
 
 
 
+
+
+
+<section class="ods"> 
+  <h1> Objetivos de la EBI, en cifras</h1>
+  <div class="wrapper">
+    <div class="container">
+      <i class="fa fa-eur" aria-hidden="true"></i>
+      <span class="num" data-val="60Mil.M">000</span>
+      <span class="text">Euros en beneficios</span>
+    </div>
+
+    <div class="container">
+      <i class="fa fa-bolt" aria-hidden="true"></i>
+      <span class="num" data-val="-20%">000</span>
+      <span class="text">Energía empleada por el sector náutico</span>
+    </div>
+
+    <div class="container">
+      <i class="fa fa-users" aria-hidden="true"></i>
+      <span class="num" data-val="35Mil">000</span>
+      <span class="text"> Nuevos Empleos</span>
+    </div>
+
+    <div class="container">
+      <i class="fa fa-suitcase" aria-hidden="true"></i>
+      <span class="num" data-val="30M ">000</span>
+      <span class="text">Turistas esperados en el sector náutico</span>
+    </div>
+    
+  </div>
 </section>
 
 
-  
+<section class = "contenido"></section>
   <!--- Footer ---->
 
   <section class="footer">
@@ -100,6 +129,31 @@
     }
 
   </script>
+<script>
+  let valueDisplays = document.querySelectorAll('.num');
+  let interval = 3000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValueStr = valueDisplay.getAttribute('data-val');
+    let isPercentage = endValueStr.includes('%');
+    let endValue = parseInt(endValueStr.replace('%', ''));
+    let unit = endValueStr.replace(endValue.toString(), '');
+    let duration = Math.abs(Math.floor(interval / endValue));
+    let counter = setInterval(function(){
+      startValue += (endValue >= 0 ? 1 : -1);
+      valueDisplay.textContent = startValue + unit;
+      if (startValue === endValue) {
+        clearInterval(counter);
+      }
+    }, duration)
+  });
+  
+  
+  
+  </script>
+
+
 
 
 </body>
