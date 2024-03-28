@@ -1,14 +1,5 @@
-COLORES PRINCIPALES
-#FCF9E6
-#F9F6E3
-#18423E
-#9BC0B0
-#4D7D5A
-#F6FDF4
-#E4F3E5
-#AAC9BA
-#749583
-#CBDFD1
-AZULES: de más potente a más claro
-#6aa9e9
-#98c3ed
+.color1 {color: #3f7c7d;}
+.color2 {color: #75a895;}
+.color3 {color: #cfd5bd;}
+.color4 {color: #e7ecd9;}
+.color5 {color: #f9f9f4;}

@@ -11,7 +11,7 @@ body{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(8, 17, 55, 0.7)),url(images/banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -26,7 +26,7 @@ nav{
 
 nav img {
     width: 120px;
-    opacity: 0.9; /* Ajusta la opacidad del logo. Puedes cambiar el valor según tus necesidades. */
+    opacity: 0.7; /* Ajusta la opacidad del logo. Puedes cambiar el valor según tus necesidades. */
     border-radius: 5px; /* Añade bordes suaves al logo. Puedes cambiar el valor según tus necesidades. */
     
 }
@@ -178,7 +178,7 @@ p{
 
 .course-col{
     flex-basis: 31%;
-    background: #dbe2c9;
+    background: #E4F3E5;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
