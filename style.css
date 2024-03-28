@@ -438,15 +438,16 @@ h3{
 .about-col{
     flex-basis: 48%;
     padding: 30px 2%;
+    
 }   
 
 .about-col img{
-    width: 100%;
+    width: 80%;
+    border-radius: 15px;
 }
 
 .about-col h1{
     padding-top: 0;
-
 }
 
 .about-col p{
@@ -462,6 +463,9 @@ h3{
 .red-btn:hover{
     color: #fff;
 }
+
+/* -------------- ODS de About Us  ---------------*/
+
 
 
 /*-------------- blog-content --------------*/
