@@ -1,1 +1,14 @@
-["295447","faf8e5","9cc3b3","8cab95","7da569","72aaa4","c1d4b8","7c7c74","bcbcb4"]
+COLORES PRINCIPALES
+#FCF9E6
+#F9F6E3
+#18423E
+#9BC0B0
+#4D7D5A
+#F6FDF4
+#E4F3E5
+#AAC9BA
+#749583
+#CBDFD1
+AZULES: de más potente a más claro
+#6aa9e9
+#98c3ed

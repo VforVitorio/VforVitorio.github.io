@@ -24,8 +24,11 @@ nav{
     align-items: center;
 }
 
-nav img{
-    width:10px;
+nav img {
+    width: 120px;
+    opacity: 0.9; /* Ajusta la opacidad del logo. Puedes cambiar el valor según tus necesidades. */
+    border-radius: 5px; /* Añade bordes suaves al logo. Puedes cambiar el valor según tus necesidades. */
+    
 }
 
 .nav-links{
