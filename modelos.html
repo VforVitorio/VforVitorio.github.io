@@ -34,20 +34,64 @@
     </nav>
 
 
-    <!-- A CAMBIAR POR EL CONTENIDO DE MODELOS.HTML -->
+    
     <div class="text-box">
-      <h1>Donde la innovación se encuentra con el mar</h1>
+      <h1>Nuestros modelos</h1>
       <p>
-        Explora Sailgreen, la empresa de alquiler de barcos del futuro. <br> <br>
-        Enbarcaciones limpias y reciclables sin precedentes, con la última tecnología a bordo. <br>
-        Punteros en la transformación digital de la industria náutica.
+        Tenemos 3 modelos de embarcaciones de recreo, todas ellas 100% sostenibles y equipadas con la última tecnología.
       </p>
-      <a href="about.html" class="hero-btn"> Te presentamos Sailgreen</a>
     </div>
 
   </section>
 
- 
+ <section class="modelos">
+  <div class = "modelos-header" id = "header-modelos">
+    <nav>
+    <ul>
+      <li><a href = "#" id ="sea12">Seastorm 12</a></li>
+      <li><a href = "#" id = "sea14">Seastorm 14</a></li>
+      <li><a href = "#" id = "sea17">Seastorm 17</a></li>
+      
+    </ul>
+    <a href="contact.html" class = "btn">Reserva ahora</a>
+    </nav>
+
+    <div class="info">
+      <div>
+        <h2 id = "peso"> 200 Kg</h2>
+        <p> Max Peso</p>
+      </div>
+      <div> 
+        <h2 id = "largo">366 cm</h2>
+        <p>Eslora</p>
+      </div>
+      <div> 
+        <h2 id = "ancho">167 cm</h2>
+        <p>Ancho</p>
+      </div>
+      <div>
+        <h2 id = "personas">4 p</h2>
+        <p>Max Personas</p>
+      </div>
+      <div>
+        <h2 id = "caballos"> 25HP</h2>
+        <p>Caballos</p>
+      </div>
+      <div class="line">
+
+      </div>
+      <div>
+        <h2 id = "model">Seastorm 17</h2>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+ </section>
 
 
 
@@ -90,7 +134,52 @@
 
   </script>
 
+<script>
+  var header_modelos = document.getElementById("header-modelos");
+  var s12 = document.getElementById("sea12");
+  var s14= document.getElementById("sea14");
+  var s17 = document.getElementById("sea17");
+  var model = document.getElementById("model");
+  var personas = document.getElementById("personas");
+  var largo = document.getElementById("largo");
+  var peso = document.getElementById("peso");
+  var caballos = document.getElementById("caballos");
+  var ancho = document.getElementById("ancho");
 
+  s12.onclick = function(){
+    event.preventDefault();
+    header_modelos.style.backgroundImage = "url('images/sail_12.png')";
+    model.innerHTML = "Seastorm 12";
+    personas.innerHTML = "4 p";
+    largo.innerHTML = "366 cm";
+    peso.innerHTML = " 200 Kg";
+    caballos.innerHTML = "25HP";
+    ancho.innerHTML = "167 cm";
+  }
+  s14.onclick = function(){
+    event.preventDefault();
+    header_modelos.style.backgroundImage = "url('images/sail_14.png')";
+    model.innerHTML = "Seastorm 14";
+    personas.innerHTML = "6 p";
+    largo.innerHTML = "400 cm";
+    peso.innerHTML = "380 kg";
+    caballos.innerHTML = "30HP";
+    ancho.innerHTML = "190 cm";
+  
+  }
+// Para hacer los cambios tan solo meter ids en h2 y cambiar el inner html
+  s17.onclick = function(){
+    event.preventDefault();
+    header_modelos.style.backgroundImage = "url('images/sail_17.png')";
+    model.innerHTML = "Seastorm 17";
+    personas.innerHTML = " 8 p";
+    largo.innerHTML = "500 cm";
+    peso.innerHTML = "450 kg";
+    caballos.innerHTML = "35HP";
+    ancho.innerHTML = "200 cm";
+  }
+
+</script>
 </body>
 
 </html>

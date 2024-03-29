@@ -911,3 +911,88 @@ h3{
     box-sizing: border-box;
    
 }
+
+
+
+
+
+/*************************  Modelos  *************************/
+.modelos {
+    position: relative; /* Añadido para posicionar .info en relación a .modelos */
+    /* Añade aquí el resto de tus estilos para .modelos */
+  }
+.modelos-header{
+    width: 86%;
+    height: 100vh;
+    background-image: url(images/sail_12.png);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 0 7%;
+    transition: background-image 1s;
+}
+.modelos p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.modelos-header nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.modelos-header nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+.modelos-header nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.modelos-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.modelos-header nav .btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-right: 7%;
+}
+
+.info {
+    width: 100%;
+    padding: 0.7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: absolute; /* Cambiado de fixed a absolute */
+    bottom: 50px;
+    left: 0;
+  }
+
+.info div{
+    margin: 0 20px;
+}
+
+.info div h2{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.info .line{
+    flex: 1;
+    background: #fff;
+    height: 4px;
+}
