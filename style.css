@@ -782,6 +782,7 @@ h3{
 
 .blog-left img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .blog-left h2{
