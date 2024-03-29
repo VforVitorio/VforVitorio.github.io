@@ -229,6 +229,7 @@ h3{
 .campus-col img{
     width: 100%;
     display: block;
+    
 }
 
 .layer{
@@ -531,24 +532,36 @@ h3{
 }
 
 @media screen and (max-width: 768px) {
-    .ebi-text, .ebi-image {
-        width: 100%;
+    .ebi-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Centra el texto horizontalmente */
     }
 
     .ebi-text {
         padding: 10px;
-        font-size: 0.9em; /* Reduce el tamaño del texto */
+        font-size: 0.9em;
     }
 
     .ebi-text li {
-        margin-left: 10px; /* Reduce el margen izquierdo de los elementos li */
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .ebi-image {
+        order: 1;
     }
 
     .ebi-image img {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        max-width: 100%; /* Asegura que la imagen no sobrepase su contenedor */
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
     }
 }
-
 /* -------------- ODS de About Us  ---------------*/
 
 .ods h1 {
