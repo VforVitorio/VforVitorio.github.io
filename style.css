@@ -464,6 +464,91 @@ h3{
     color: #fff;
 }
 
+
+/*************************  EBI de About Us  *************************/
+.ebi-content {
+    background-color: #a4d7f8;
+    display: grid; /* Cambiado de flex a grid */
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */
+    align-items: top; /* Alinea el inicio de los elementos */
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana de visualización */
+}
+
+.ebi-text {
+    padding: 20px;
+    z-index: 1; /* Asegura que el texto siempre esté encima de la imagen */
+    position: relative; /* Necesario para que z-index funcione */
+}
+.ebi-text h1{
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+
+}
+.ebi-text p {
+    color: #222;
+}
+
+.ebi-text h2 {
+    margin-top: 0; /* Elimina el margen superior para alinear el título con la imagen */
+}
+
+.ebi-text ul li .objetivo {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.ebi-text ul {
+    margin-top: 20px;
+    list-style-type: disc; 
+    font-size: 1.1em;
+}
+
+.ebi-text li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+.ebi-image {
+    display: flex; /* Añadido para hacer que la imagen se ajuste al tamaño del contenido de texto */
+    align-items: flex-start; /* Añadido para hacer que la imagen se ajuste al tamaño del contenido de texto */
+    overflow: hidden;
+}
+
+.ebi-image img {
+    width: 100%;
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.ebi-image img.show {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .ebi-text, .ebi-image {
+        width: 100%;
+    }
+
+    .ebi-text {
+        padding: 10px;
+        font-size: 0.9em; /* Reduce el tamaño del texto */
+    }
+
+    .ebi-text li {
+        margin-left: 10px; /* Reduce el margen izquierdo de los elementos li */
+    }
+
+    .ebi-image img {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
 /* -------------- ODS de About Us  ---------------*/
 
 .ods h1 {
@@ -551,7 +636,115 @@ h3{
 
 
 
+/* -------------- Contenido de About Us  ---------------*/
 
+
+
+.contenido {
+    background-color: #f9f9f4; /* color5 */
+    padding: 20px;
+    margin: 20px auto;
+    
+   
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+   
+}
+
+.fila {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: start; /* Alinea los elementos al inicio verticalmente */
+    margin-bottom: 40px; /* Aumenta el margen inferior para más espacio */
+    padding: 20px; /* Añade padding para dar espacio alrededor de los elementos */
+    transition: background-color 2s ease; /* Añade una transición suave al cambio de color de fondo */
+}
+
+.fila.invertida {
+    flex-direction: row-reverse;
+}
+
+.texto, .foto {
+    width: auto; /* Cambia el ancho a auto para que se ajuste al contenido */
+    margin-right: 20px; /* Añade margen a la derecha para separar el texto de la foto */
+}
+
+.texto h2 {
+    margin-bottom: 20px; /* Añade margen para separar el título del texto */
+    text-align: center;
+    
+}
+
+.foto img {
+    width: 60%;
+    height: auto;
+    border-radius: 15px; /* Redondea los bordes de la imagen */
+    transition: width 0.3s ease; /* Añade una transición suave al cambio de tamaño de la imagen */
+}
+
+.color1 {
+    background-color: #F2BE5C;
+    color: #F2F2F2; /* color5 */
+    
+}
+
+.color1 p{
+    color: #F2F2F2;
+}
+
+
+.color2 {
+    background-color: #F28157;
+    color: #F2F2F2; /* color5 */
+}
+
+.color2 p{
+    color: #F2F2F2;
+}
+
+
+.color3 {
+    background-color: #D98E32;
+    color: #F2F2F2; /* color1 */
+}
+
+.color3 p{
+    color: #F2F2F2;
+}
+
+.color4 {
+    background-color: #048ABF;
+    color: #F2F2F2; /* color1 */
+}
+
+.color4 p{
+    color: #F2F2F2;
+}
+
+@media screen and (max-width: 768px) {
+    .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fila.invertida {
+        flex-direction: column;
+    }
+
+    .texto, .foto {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .foto img {
+        width: 100%;
+        height: auto;
+      }
+}
 
 
 
