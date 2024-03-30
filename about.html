@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -136,7 +138,7 @@
   <div class="caja">
     <h1 class="titulo"> Sailgreen, en ODS</h1>
 
-    <div class="fila color1 ">
+    <div class="fila color1 " data-aos = "fade-up">
       <div class="texto">
         <h2>ODS 7</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -147,12 +149,12 @@
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o
           fficia deserunt mollit anim id est laborum."</p>
       </div>
-      <div class="foto">
+      <div class="foto-derecha">
         <img src="images/ods_7.jpg" alt="Descripción de la foto 1">
       </div>
     </div>
 
-    <div class="fila invertida color2 ">
+    <div class="fila invertida color2 " data-aos = "fade-up">
       <div class="texto">
         <h2>ODS 9</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -168,7 +170,7 @@
       </div>
     </div>
 
-    <div class="fila color3 ">
+    <div class="fila color3 " data-aos = "fade-up">
       <div class="texto">
         <h2>ODS 12</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -179,12 +181,12 @@
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o
           fficia deserunt mollit anim id est laborum."</p>
       </div>
-      <div class="foto">
+      <div class="foto-derecha">
         <img src="images/ods_12.jpg" alt="Descripción de la foto 3">
       </div>
     </div>
 
-    <div class="fila invertida color4 ">
+    <div class="fila invertida color4" data-aos = "fade-up" >
       <div class="texto">
         <h2>ODS 14</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -195,7 +197,7 @@
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o
           fficia deserunt mollit anim id est laborum."</p>
       </div>
-      <div class="foto">
+      <div class="foto" >
         <img src="images/ods_14.jpg" alt="Descripción de la foto 4">
       </div>
     </div>
@@ -283,7 +285,9 @@ const imagesToShow = document.querySelectorAll('.ebi-image img');
   });
   </script>
 
-
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

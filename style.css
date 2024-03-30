@@ -672,18 +672,20 @@ h3{
     display: flex;
     justify-content: flex-start; /* Alinea los elementos al inicio */
     align-items: start; /* Alinea los elementos al inicio verticalmente */
-    margin-bottom: 40px; /* Aumenta el margen inferior para más espacio */
+    margin-bottom: 60px; /* Aumenta el margen inferior para más espacio */
     padding: 20px; /* Añade padding para dar espacio alrededor de los elementos */
     transition: background-color 2s ease; /* Añade una transición suave al cambio de color de fondo */
 }
 
 .fila.invertida {
     flex-direction: row-reverse;
+    margin-bottom: 60px;
 }
 
 .texto, .foto {
     width: auto; /* Cambia el ancho a auto para que se ajuste al contenido */
     margin-right: 20px; /* Añade margen a la derecha para separar el texto de la foto */
+    
 }
 
 .texto h2 {
@@ -693,6 +695,19 @@ h3{
 }
 
 .foto img {
+    width: 60%;
+    height: auto;
+    border-radius: 15px; /* Redondea los bordes de la imagen */
+    transition: width 0.3s ease; /* Añade una transición suave al cambio de tamaño de la imagen */
+}
+
+.foto-derecha{
+    margin-left: 20px;
+    width: auto;
+}
+
+.foto-derecha img {
+    margin-left: 235px;
     width: 60%;
     height: auto;
     border-radius: 15px; /* Redondea los bordes de la imagen */
@@ -756,7 +771,15 @@ h3{
     .foto img {
         width: 100%;
         height: auto;
-      }
+    }
+    .foto-derecha {
+        margin-left: 0; /* Añade esta línea para eliminar el margen izquierdo en pantallas pequeñas */
+    }
+    .foto-derecha img {
+        margin-left: 0; /* Añade esta línea para eliminar el margen izquierdo en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -789,6 +812,7 @@ h3{
     color: #222;
     font-weight: 600;
     margin: 30px 0;
+    text-align: center;
 }
 
 .blog-left p{
@@ -828,6 +852,7 @@ h3{
 
 .comment-box h3{
     text-align: left;
+    text-align: center;
 }
 
 .comment-form input, .comment-form textarea{
