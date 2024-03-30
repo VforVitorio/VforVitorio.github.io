@@ -996,3 +996,22 @@ h3{
     background: #fff;
     height: 4px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: row; /* Cambia la dirección de la cuadrícula a la horizontal */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no haya suficiente espacio */
+        align-items: center; /* Alinea los elementos al centro del contenedor */
+        padding: 0.3%; /* Reduce el padding para ahorrar espacio */
+        bottom: 10px; /* Reduce el espacio desde el borde inferior para ahorrar espacio */
+      }
+    
+      .info div {
+        margin: 10px; /* Añade un margen alrededor de los elementos para separarlos */
+      }
+    
+      .info div h2 {
+        font-size: 22px; /* Reduce el tamaño de la fuente para que se ajuste mejor */
+      }
+    }
