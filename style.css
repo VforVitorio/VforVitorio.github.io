@@ -291,12 +291,14 @@ h3{
 
 .facilities-col p{
     padding: 0;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .facilities-col h3{
     margin-top: 16px;
     margin-bottom: 16px;
-    text-align: left;
+    text-align: center;
    
 }
 
@@ -1040,3 +1042,125 @@ h3{
         font-size: 22px; /* Reduce el tamaño de la fuente para que se ajuste mejor */
       }
     }
+
+
+    /**** Modelos de motores ****/
+
+
+
+    .motores {
+        position: relative; /* Añadido para posicionar .info en relación a .modelos */
+        /* Añade aquí el resto de tus estilos para .modelos */
+      }
+    .motores-header{
+        width: 86%;
+        height: 100vh;
+        background-image: url(images/25_yamaha.jpg);
+        background-color: rgba(0,0,0,0.5);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        padding: 0 7%;
+        transition: background-image 1s;
+    }
+    .motores p{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .motores-header nav{
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .motores-header nav ul{
+        flex: 1;
+        text-align: center;
+    }
+    
+    .motores-header nav ul li{
+        display: inline-block;
+        margin: 10px 20px;
+    }
+    
+    .motores-header nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .motores-header nav .btn{
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        border-radius: 30px;
+        margin-right: 7%;
+    }
+    
+    .info {
+        width: 100%;
+        padding: 0.7%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: absolute; /* Cambiado de fixed a absolute */
+        bottom: 50px;
+        left: 0;
+      }
+    
+    .info div{
+        margin: 0 20px;
+    }
+    
+    .info div h2{
+        font-size: 44px;
+        font-weight: 400;
+    }
+    
+    .info .line{
+        flex: 1;
+        background: #fff;
+        height: 4px;
+    }
+    
+.motor-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px; /* Ajusta estos valores según tus necesidades */
+    border: 1px solid #fff; /* Ajusta este valor según tus necesidades */
+    color: #fff; /* Ajusta este valor según tus necesidades */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+
+}
+
+.motor-link:hover {
+    background-color: #fff; /* Ajusta este valor según tus necesidades */
+    color: #000; /* Ajusta este valor según tus necesidades */
+}
+    
+    @media screen and (max-width: 768px) {
+        .info {
+            flex-direction: row; /* Cambia la dirección de la cuadrícula a la horizontal */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no haya suficiente espacio */
+            align-items: center; /* Alinea los elementos al centro del contenedor */
+            padding: 0.3%; /* Reduce el padding para ahorrar espacio */
+            bottom: 10px; /* Reduce el espacio desde el borde inferior para ahorrar espacio */
+          }
+        
+          .info div {
+            margin: 10px; /* Añade un margen alrededor de los elementos para separarlos */
+          }
+        
+          .info div h2 {
+            font-size: 22px; /* Reduce el tamaño de la fuente para que se ajuste mejor */
+          }
+        }
