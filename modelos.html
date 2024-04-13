@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sailgreen Economía Circular</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href=<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo_sailgreen.jpg" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="about.html">QUIENES SOMOS</a></li>
+          <li><a href="course.html">FACILIDADES</a></li>
+          <li><a href="modelos.html">MODELOS</a></li>
+          <li><a href="blog.html">ELEMENTOS DIFERENCIADORES</a></li>
+          <li><a href="contact.html">CONTÁCTANOS</a></li>
+          
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+    
+    <div class="text-box">
+      <h1>Nuestros modelos</h1>
+      <p>
+        Tenemos 3 modelos de embarcaciones de recreo, todas ellas 100% sostenibles y equipadas con la última tecnología.
+      </p>
+    </div>
+
+  </section>
+
+ <section class="modelos" data-aos = "fade-up">
+  <div class = "modelos-header" id = "header-modelos">
+    <nav>
+    <ul>
+      <li><a href = "#" id ="sea12">Seastorm 12</a></li>
+      <li><a href = "#" id = "sea14">Seastorm 14</a></li>
+      <li><a href = "#" id = "sea17">Seastorm 17</a></li>
+      
+    </ul>
+    <a href="contact.html" class = "btn">Reserva ahora</a>
+    </nav>
+
+    <div class="info">
+      <div>
+        <h2 id = "peso"> 200 Kg</h2>
+        <p> Peso</p>
+      </div>
+      <div> 
+        <h2 id = "largo">366 cm</h2>
+        <p>Eslora</p>
+      </div>
+      <div> 
+        <h2 id = "ancho">167 cm</h2>
+        <p>Manga</p>
+      </div>
+      <div>
+        <h2 id = "personas">4 p</h2>
+        <p>Max Personas</p>
+      </div>
+      <div>
+        <h2 id = "caballos"> 25HP</h2>
+        <p>Caballos</p>
+      </div>
+      <div class="line">
+
+      </div>
+      <div>
+        <h2 id = "model">Seastorm 17</h2>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+ </section>
+
+
+ <section class="motores" data-aos = "fade-up">
+  
+  <div class = "motores-header" id = "header-motores">
+    <nav>
+    <ul class="motor-links">
+      <li><a href="#" id="mot12" class="motor-link">25HP </a></li>
+      <li><a href="#" id="mot14" class="motor-link">30HP </a></li>
+      <li><a href="#" id="mot17" class="motor-link">60HP </a></li>
+    </ul>
+    <a href="contact.html" class = "btn">Reserva ahora</a>
+    </nav>
+
+    <div class="info">
+      
+      <div>
+        <h2>Compatible con</h2>
+        <p id = "compatible">Seastorm 12</p>
+      </div>
+      
+      <div class="line">
+
+      </div>
+      <div>
+        <h2 id = "modelo-motor">25hp Light Grey Metallic</h2>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+ </section>
+
+ 
+
+
+  
+
+
+  <!--- Footer ---->
+
+  <section class="footer">
+    <h4>Sobre nosotros</h4>
+    <p>
+      Somos una StartUp que pretende ofrecer embarcaciones de recreo fiables, <br>
+      sin que te preocupes por dañar el mar por el que navegas.
+    </p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+
+  </section>
+
+
+  <!------ Javascript for Toggle menu ------>
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+
+<script>
+  var header_modelos = document.getElementById("header-modelos");
+  var s12 = document.getElementById("sea12");
+  var s14= document.getElementById("sea14");
+  var s17 = document.getElementById("sea17");
+  var model = document.getElementById("model");
+  var personas = document.getElementById("personas");
+  var largo = document.getElementById("largo");
+  var peso = document.getElementById("peso");
+  var caballos = document.getElementById("caballos");
+  var ancho = document.getElementById("ancho");
+
+  s12.onclick = function(){
+    event.preventDefault();
+    header_modelos.style.backgroundImage = "url('images/sail_12.png')";
+    model.innerHTML = "Seastorm 12";
+    personas.innerHTML = "4 p";
+    largo.innerHTML = "366 cm";
+    ancho.innerHTML = "167 cm";
+    peso.innerHTML = " 200 Kg";
+    caballos.innerHTML = "25HP";
+  }
+  s14.onclick = function(){
+    event.preventDefault();
+    header_modelos.style.backgroundImage = "url('images/sail_14.png')";
+    model.innerHTML = "Seastorm 14";
+    personas.innerHTML = "5 p";
+    largo.innerHTML = "427 cm";
+    ancho.innerHTML = "186 cm";
+    peso.innerHTML = "260 kg";
+    caballos.innerHTML = "30HP";
+  
+  }
+// Para hacer los cambios tan solo meter ids en h2 y cambiar el inner html
+  s17.onclick = function(){
+    event.preventDefault();
+    header_modelos.style.backgroundImage = "url('images/sail_17.png')";
+    model.innerHTML = "Seastorm 17";
+    personas.innerHTML = " 6 p";
+    largo.innerHTML = "518 cm";
+    ancho.innerHTML = "197 cm";
+    peso.innerHTML = "380 kg";
+    caballos.innerHTML = "60HP";
+  }
+
+</script>
+
+
+<script>
+var header_motores = document.getElementById("header-motores");
+var mot12 = document.getElementById("mot12");
+var mot14 = document.getElementById("mot14");
+var mot17 = document.getElementById("mot17");
+var modelo_motor = document.getElementById("modelo-motor");
+var compatible = document.getElementById("compatible");
+
+mot12.onclick = function(event){
+  event.preventDefault();
+  header_motores.style.backgroundImage = "url('images/25_yamaha.jpg')";
+  modelo_motor.innerHTML = "25hp Light Grey Metallic";
+  compatible.innerHTML = "Seastorm 12";
+}
+
+mot14.onclick = function(event){
+  event.preventDefault();
+  header_motores.style.backgroundImage = "url('images/30_yamaha.jpg')";
+  modelo_motor.innerHTML = "30hp Light Grey Metallic";
+  compatible.innerHTML = "Seastorm 14";
+}
+
+mot17.onclick = function(event){
+  event.preventDefault();
+  header_motores.style.backgroundImage = "url('images/60_yamaha.jpg')";
+  modelo_motor.innerHTML = "60hp Light Grey Metallic";
+  compatible.innerHTML = "Seastorm 17";
+}
+
+
+
+
+</script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
