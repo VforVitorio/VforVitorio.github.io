@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flightradar Website Design</title>
+  <title>Sailgreen Economía Circular</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href=<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,66 +11,208 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
   <section class="sub-header">
     <nav>
-      <a href="index.html"><img src="images/logo.png" /></a>
+      <a href="index.html"><img src="images/logo_sailgreen.jpg" /></a>
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="course.html">COURSE</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="about.html">QUIENES SOMOS</a></li>
+          <li><a href="course.html">FACILIDADES</a></li>
+          <li><a href="modelos.html">MODELOS</a></li>
+          <li><a href="blog.html">ELEMENTOS DIFERENCIADORES</a></li>
+          <li><a href="contact.html">CONTÁCTANOS</a></li>
+          
         </ul>
       </div>
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
    
-    <h1>About Us</h1>
+    <h1>Quienes somos</h1>
   </section>
 
 <!--- About us content---->
 <section class="about-us">
   <div class="row">
     <div class="about-col">
-      <h1> We are the world's most popular aviation site </h1>
+      <h1> Somos la solución para un alquiler rápido y sostenible </h1>
       <p>
-        Flightradar24 is a global flight tracking service that provides you with real-time information about thousands of aircraft around the world. 
-        
-        Flightradar24 tracks 180,000+ flights, from 1,200+ airlines, flying to or from 4,000+ airports around the world in real time.
-        Our service is currently available online and for your iOS or Android device.
+        Sailgreen es una idea que nace con el objetivo de brindar sostenibilidad a un 
+        sector al alza en Galicia que tradicionalmente ha sido muy contaminante. 
+        <br> <br>
+        Nuestro objetivo es ofrecer una alternativa de alquiler de barcos que sea sostenible y respetuosa con el medio ambiente,
+        mientras mantenemos la calidad y comodidad de las embarcaciones tradicionales.
       </p>
 
-      <a href="course.html" class = "hero-btn red-btn">EXPLORE NOW</a>
+      <a href="course.html" class = "hero-btn red-btn">EXPLORA AHORA NUESTRAS FACILIDADES</a>
 
     </div>
 
-
     <div class="about-col">
-      <img src="images/about.png">
+      <img src="images/logo_sailgreen.jpg">
     </div>
   </div>
 
+</section>
 
+<!-- EBI -->
 
+<section class="ebi">
+  <div class="ebi-content">
+    <div class="ebi-text">
+      <h1>Objetivos de Desarrollo Sostenible de la EBI</h1>
+      <p>
+        Con el fin de apostar por un reciclaje sostenible de las 
+        embarcaciones de recreo y en concordancia con la 
+        hoja de ruta de objetivos de desarrollo sostenible 
+        de la European Boating Industry (EBI), nace la idea de 
+        fabricar barcos que aprovechen los materiales de otros navíos, 
+        junto a materiales en auge como el plástico. <br> <br>
+        Algunos de los objetivos de la EBI con los que estamos fuertemente comprometidos son:
+      </p>
+
+      <ul>
+        <li><span class="objetivo">Reducir la huella ambiental del sector náutico</span>: La empresa utilizará sus propios barcos 
+          fabricados con polietileno de alta densidad (HDPE) procedente de plásticos reciclados, 
+          empleando unos motores propulsados por hidrógeno verde o energía eléctrica, 
+          comprometida con los objetivos de desarrollo sostenible de las Naciones Unidas 
+          y con la hoja de ruta de la EBI. </li>
+  
+        <li><span class="objetivo">Promover la innovación en el sector náutico</span>: 
+        Nuestro negocio tiene como pilares la sostenibilidad y transformación digital de un sector que se 
+      ha quedado algo más atrás que el resto. Con la implementación de las nuevas tecnologías de nuestros barcos,
+    junto con el empleo de aplicaciones rápidas y seguras para el alquiler de nuestros clientes, queremos contribuir
+  al cambio del sector.</li>
+       
+      </ul>
+    </div>
+    <div class="ebi-image">
+      <img src="images/ebi.jpg" alt="Descripción de la imagen">
+    </div>
+  </div>
 </section>
 
 
 
 
 
-  
+<section class="ods"> 
+  <h1> Objetivos de la EBI, en cifras</h1>
+  <div class="wrapper">
+    <div class="container">
+      <i class="fa fa-eur" aria-="true"></i>
+      <span class="num" data-val="60Mil.M">000</span>
+      <span class="text">Euros en beneficios</span>
+    </div>
+
+    <div class="container">
+      <i class="fa fa-bolt" aria-="true"></i>
+      <span class="num" data-val="-20%">000</span>
+      <span class="text">Energía empleada por el sector náutico</span>
+    </div>
+
+    <div class="container">
+      <i class="fa fa-users" aria-="true"></i>
+      <span class="num" data-val="35Mil">000</span>
+      <span class="text"> Nuevos Empleos</span>
+    </div>
+
+    <div class="container">
+      <i class="fa fa-suitcase" aria-="true"></i>
+      <span class="num" data-val="30M ">000</span>
+      <span class="text">Turistas esperados en el sector náutico</span>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Contenindo -->
+
+<section class="contenido">
+  <div class="caja">
+    <h1 class="titulo"> Sailgreen, en ODS</h1>
+
+    <div class="fila color1 " data-aos = "fade-up">
+      <div class="texto">
+        <h2>ODS 7</h2>
+        <p>Sailgreen usa motores eléctricos en todas sus embarcaciones, 
+          comprometiéndose así con una energía no contaminante.  Además, 
+          la empresa está a la espera de la salida al mercado de motores de 
+          hidrógeno para embarcaciones de recreo como los de Yamaha para ser 
+          equipados en nuestras embarcaciones. 
+          <br> <br>Gracias a la composición de los barcos, 
+          su bajo peso permite su transporte en vehículos con una baja huella de carbono. En Sailgreen apostamos por las energías no contaminantes y disruptivas en el sector naútico como los motores eléctricos o de hidrógeno.
+          </p>
+      </div>
+      <div class="foto-derecha">
+        <img src="images/ods_7.jpg" alt="Descripción de la foto 1">
+      </div>
+    </div>
+
+    <div class="fila invertida color2 " data-aos = "fade-up">
+      <div class="texto">
+        <h2>ODS 9</h2>
+        <p>Somos una empresa puntera en el negocio de alquiler de embarcaciones disruptivas en el sector. Vemos en la innovación sostenible el futuro del sector náutico y por ello contamos con proveedores que compartan nuestra visión, como la Noruega Sailstrom con sus botes de materiales reciclados y Yamaha con sus motores de combustión tradicional inigualablemente eficientes y sus inversiones en los motores eléctricos y de hidrógeno para el sector naval.
+
+          <br> <br>
+          La transformación digital es un punto en el que queremos destacar, equipando un copiloto virtual a bordo junto con una aplicación rápida, intuitiva y sencilla. El mercado actual demanda rapidez, calidad, seguridad y simpleza, aspectos en los que nos encontramos en la punta de lanza del sector naval gallego.
+          <br> <br>
+          - "Donde la innovación se encuentra con el mar."  
+        </p>
+      </div>
+      <div class="foto">
+        <img src="images/ods_9.jpg" alt="Descripción de la foto 2">
+      </div>
+    </div>
+
+    <div class="fila color3 " data-aos = "fade-up">
+      <div class="texto">
+        <h2>ODS 12</h2>
+        <p>Uno de los puntos clave donde las empresas deben enfocarse es no solo 
+          en reducir el coste medioambiental de su producto, si no en reducir la 
+          huella de carbono durante el proceso de producción. 
+          Nuestra empresa opta por proveedores “greenwashing-free” 
+          con una cadena de producción sostenible, ofreciendo productos 
+          que realmente si sean más sostenibles que aquellos que quieren sustituir.
+        <br> <br> 
+        También contamos con campañas y programas de concienciación de nuestros clientes sobre la importancia de un consumo responsable de nuestros servicios. De esta forma somos más limpios, más fiables y ofrecemos mayores incentivos a nuestros clientes frente a la competencia.  </p>
+      </div>
+      <div class="foto-derecha">
+        <img src="images/ods_12.jpg" alt="Descripción de la foto 3">
+      </div>
+    </div>
+
+    <div class="fila invertida color4" data-aos = "fade-up" >
+      <div class="texto">
+        <h2>ODS 14</h2>
+        <p>Indudablemente, nuestro compromiso más importante es la preservación de los ecosistemas donde operamos. Junto a la sostenibilidad de nuestros productos, ofrecemos regularmente talleres y campañas 
+          donde intentamos concienciar a nuestros clientes y a nuestro entorno sobre 
+          la importancia de unos buenos hábitos para preservar el fondo marino. 
+          Pequeñas acciones que suponen una gran diferencia.
+          <br> <br>
+          Además, el residuo que producen nuestras embarcaciones es prácticamente nulo. Los motores de combustión se encuentran entre los más eficientes del mercado. Los eléctricos y próximamente de hidrógeno producen 0 emisiones. Todos nuestros motores también cumplen con una de las contaminaciones más olvidadas, la acústica, permitiendo no solo ser más limpios sino de disfrutar del verdadero sonido del mar.
+          
+         <br> <br>
+         - "Con el fin de disfrutar del mar sin dejar huella."</p>
+      </div>
+      <div class="foto" >
+        <img src="images/ods_14.jpg" alt="Descripción de la foto 4">
+      </div>
+    </div>
+</section>
+
   <!--- Footer ---->
 
   <section class="footer">
-    <h4>About us</h4>
+    <h4>Sobre nosotros</h4>
     <p>
-      We are a company that offers a wide range of
-      courses to help you get started in the aviation industry.
+      Somos la solución gallega para un alquiler náutico rápido y sostenible
     </p>
     <div class="icons">
       <i class="fab fa-facebook"></i>
@@ -99,6 +241,57 @@
   </script>
 
 
+
+
+<script>
+  let valueDisplays = document.querySelectorAll('.num');
+  let interval = 2000;
+
+  let observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        let valueDisplay = entry.target;
+        let startValue = 0;
+        let endValueStr = valueDisplay.getAttribute('data-val');
+        let isPercentage = endValueStr.includes('%');
+        let endValue = parseInt(endValueStr.replace('%', ''));
+        let unit = endValueStr.replace(endValue.toString(), '');
+        let duration = Math.abs(Math.floor(interval / endValue));
+        let counter = setInterval(function(){
+          startValue += (endValue >= 0 ? 1 : -1);
+          valueDisplay.textContent = startValue + unit;
+          if (startValue === endValue) {
+            clearInterval(counter);
+          }
+        }, duration)
+        observer.unobserve(valueDisplay);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  valueDisplays.forEach((valueDisplay) => {
+    observer.observe(valueDisplay);
+  });
+  
+  
+  
+  </script>
+
+<script>
+const imagesToShow = document.querySelectorAll('.ebi-image img');
+
+  window.addEventListener('scroll', () => {
+    imagesToShow.forEach((img) => {
+      if (img.getBoundingClientRect().top < window.innerHeight) {
+        img.classList.add('show');
+      }
+    });
+  });
+  </script>
+
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

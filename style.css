@@ -1,3 +1,6 @@
+body{
+    background-color: #F2EFDF;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +11,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(8, 17, 55, 0.7)),url(images/banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -21,8 +24,11 @@ nav{
     align-items: center;
 }
 
-nav img{
-    width:120px;
+nav img {
+    width: 120px;
+    opacity: 0.7; /* Ajusta la opacidad del logo. Puedes cambiar el valor según tus necesidades. */
+    border-radius: 5px; /* Añade bordes suaves al logo. Puedes cambiar el valor según tus necesidades. */
+    
 }
 
 .nav-links{
@@ -172,7 +178,7 @@ p{
 
 .course-col{
     flex-basis: 31%;
-    background: #fff3f3;
+    background: #E4F3E5;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -223,6 +229,7 @@ h3{
 .campus-col img{
     width: 100%;
     display: block;
+    
 }
 
 .layer{
@@ -284,12 +291,14 @@ h3{
 
 .facilities-col p{
     padding: 0;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .facilities-col h3{
     margin-top: 16px;
     margin-bottom: 16px;
-    text-align: left;
+    text-align: center;
    
 }
 
@@ -432,15 +441,16 @@ h3{
 .about-col{
     flex-basis: 48%;
     padding: 30px 2%;
+    
 }   
 
 .about-col img{
-    width: 100%;
+    width: 80%;
+    border-radius: 15px;
 }
 
 .about-col h1{
     padding-top: 0;
-
 }
 
 .about-col p{
@@ -458,6 +468,331 @@ h3{
 }
 
 
+/*************************  EBI de About Us  *************************/
+.ebi-content {
+    background-color: #a4d7f8;
+    display: grid; /* Cambiado de flex a grid */
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */
+    align-items: top; /* Alinea el inicio de los elementos */
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura de la ventana de visualización */
+}
+
+.ebi-text {
+    padding: 20px;
+    z-index: 1; /* Asegura que el texto siempre esté encima de la imagen */
+    position: relative; /* Necesario para que z-index funcione */
+}
+.ebi-text h1{
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+
+}
+.ebi-text p {
+    color: #222;
+}
+
+.ebi-text h2 {
+    margin-top: 0; /* Elimina el margen superior para alinear el título con la imagen */
+}
+
+.ebi-text ul li .objetivo {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.ebi-text ul {
+    margin-top: 20px;
+    list-style-type: disc; 
+    font-size: 1.1em;
+}
+
+.ebi-text li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+.ebi-image {
+    display: flex; /* Añadido para hacer que la imagen se ajuste al tamaño del contenido de texto */
+    align-items: flex-start; /* Añadido para hacer que la imagen se ajuste al tamaño del contenido de texto */
+    overflow: hidden;
+}
+
+.ebi-image img {
+    width: 100%;
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.ebi-image img.show {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .ebi-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+
+    .ebi-text {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .ebi-text li {
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .ebi-image {
+        order: 1;
+    }
+
+    .ebi-image img {
+        max-width: 100%; /* Asegura que la imagen no sobrepase su contenedor */
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+}
+/* -------------- ODS de About Us  ---------------*/
+
+.ods h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #f9f9f4; /* color1 */
+}
+.ods * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #3f7c7d; /* color1 */
+}
+
+.ods {
+    background-color: #3f7c7d; /* color5 */
+}
+
+.ods .wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ods .container {
+    flex: 1 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #e7ecd9; /* color4 */
+    border-bottom: 10px solid #cfd5bd; /* color3 */
+    text-align: center;
+    margin: 10px;
+}
+
+.ods i {
+    color: #75a895; /* color2 */
+    font-size: 2.5em;
+}
+
+.ods span.num {
+    color: #3f7c7d; /* color1 */
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.ods span.text {
+    color: #75a895; /* color2 */
+    font-size: 1em;
+    padding: 0.7em 0;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+    .ods .wrapper {
+       width: 85vw;
+    }
+    .ods .container {
+     height: 26vmin;
+     width: 26vmin;
+     font-size:12px;   
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ods .wrapper{
+        width: 90vw;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .ods .container{
+        width: 100%;
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+
+
+
+/* -------------- Contenido de About Us  ---------------*/
+
+
+
+.contenido {
+    background-color: #f9f9f4; /* color5 */
+    padding: 20px;
+    margin: 20px auto;
+    
+   
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+   
+}
+
+.fila {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: start; /* Alinea los elementos al inicio verticalmente */
+    margin-bottom: 60px; /* Aumenta el margen inferior para más espacio */
+    padding: 20px; /* Añade padding para dar espacio alrededor de los elementos */
+    transition: background-color 2s ease; /* Añade una transición suave al cambio de color de fondo */
+}
+
+.fila.invertida {
+    flex-direction: row-reverse;
+    margin-bottom: 60px;
+}
+
+.texto, .foto {
+    width: auto; /* Cambia el ancho a auto para que se ajuste al contenido */
+    margin-right: 20px; /* Añade margen a la derecha para separar el texto de la foto */
+    
+}
+
+.texto h2 {
+    margin-bottom: 20px; /* Añade margen para separar el título del texto */
+    text-align: center;
+    
+}
+
+.foto img {
+    width: 60%;
+    height: auto;
+    border-radius: 15px; /* Redondea los bordes de la imagen */
+    transition: width 0.3s ease; /* Añade una transición suave al cambio de tamaño de la imagen */
+}
+
+.foto-derecha{
+    margin-left: 20px;
+    width: auto;
+}
+
+.foto-derecha img {
+    margin-left: 235px;
+    width: 60%;
+    height: auto;
+    border-radius: 15px; /* Redondea los bordes de la imagen */
+    transition: width 0.3s ease; /* Añade una transición suave al cambio de tamaño de la imagen */
+}
+
+.color1 {
+    background-color: #F2BE5C;
+    color: #F2F2F2; /* color5 */
+    
+}
+
+.color1 p{
+    color: #F2F2F2;
+}
+
+
+.color2 {
+    background-color: #F28157;
+    color: #F2F2F2; /* color5 */
+}
+
+.color2 p{
+    color: #F2F2F2;
+}
+
+
+.color3 {
+    background-color: #D98E32;
+    color: #F2F2F2; /* color1 */
+}
+
+.color3 p{
+    color: #F2F2F2;
+}
+
+.color4 {
+    background-color: #048ABF;
+    color: #F2F2F2; /* color1 */
+}
+
+.color4 p{
+    color: #F2F2F2;
+}
+
+@media screen and (max-width: 768px) {
+    .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fila.invertida {
+        flex-direction: column;
+    }
+
+    .texto, .foto {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .foto img {
+        width: 100%;
+        height: auto;
+    }
+    .foto-derecha {
+        margin-left: 0; /* Añade esta línea para eliminar el margen izquierdo en pantallas pequeñas */
+    }
+    .foto-derecha img {
+        margin-left: 0; /* Añade esta línea para eliminar el margen izquierdo en pantallas pequeñas */
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /*-------------- blog-content --------------*/
 
 .blog-content{
@@ -472,12 +807,14 @@ h3{
 
 .blog-left img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .blog-left h2{
     color: #222;
     font-weight: 600;
     margin: 30px 0;
+    text-align: center;
 }
 
 .blog-left p{
@@ -517,6 +854,7 @@ h3{
 
 .comment-box h3{
     text-align: left;
+    text-align: center;
 }
 
 .comment-form input, .comment-form textarea{
@@ -600,3 +938,229 @@ h3{
     box-sizing: border-box;
    
 }
+
+
+
+
+
+/*************************  Modelos  *************************/
+.modelos {
+    position: relative; /* Añadido para posicionar .info en relación a .modelos */
+    /* Añade aquí el resto de tus estilos para .modelos */
+  }
+.modelos-header{
+    width: 86%;
+    height: 100vh;
+    background-image: url(images/sail_12.png);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 0 7%;
+    transition: background-image 1s;
+}
+.modelos p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.modelos-header nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.modelos-header nav ul{
+    flex: 1;
+    text-align: center;
+}
+
+.modelos-header nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.modelos-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.modelos-header nav .btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-right: 7%;
+}
+
+.info {
+    width: 100%;
+    padding: 0.7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: absolute; /* Cambiado de fixed a absolute */
+    bottom: 50px;
+    left: 0;
+  }
+
+.info div{
+    margin: 0 20px;
+}
+
+.info div h2{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.info .line{
+    flex: 1;
+    background: #fff;
+    height: 4px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .info {
+        flex-direction: row; /* Cambia la dirección de la cuadrícula a la horizontal */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no haya suficiente espacio */
+        align-items: center; /* Alinea los elementos al centro del contenedor */
+        padding: 0.3%; /* Reduce el padding para ahorrar espacio */
+        bottom: 10px; /* Reduce el espacio desde el borde inferior para ahorrar espacio */
+      }
+    
+      .info div {
+        margin: 10px; /* Añade un margen alrededor de los elementos para separarlos */
+      }
+    
+      .info div h2 {
+        font-size: 22px; /* Reduce el tamaño de la fuente para que se ajuste mejor */
+      }
+    }
+
+
+    /**** Modelos de motores ****/
+
+
+
+    .motores {
+        position: relative; /* Añadido para posicionar .info en relación a .modelos */
+        /* Añade aquí el resto de tus estilos para .modelos */
+      }
+    .motores-header{
+        width: 86%;
+        height: 100vh;
+        background-image: url(images/25_yamaha.jpg);
+        background-color: rgba(0,0,0,0.5);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        padding: 0 7%;
+        transition: background-image 1s;
+    }
+    .motores p{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    .motores-header nav{
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .motores-header nav ul{
+        flex: 1;
+        text-align: center;
+    }
+    
+    .motores-header nav ul li{
+        display: inline-block;
+        margin: 10px 20px;
+    }
+    
+    .motores-header nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .motores-header nav .btn{
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        border-radius: 30px;
+        margin-right: 7%;
+    }
+    
+    .info {
+        width: 100%;
+        padding: 0.7%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        position: absolute; /* Cambiado de fixed a absolute */
+        bottom: 50px;
+        left: 0;
+      }
+    
+    .info div{
+        margin: 0 20px;
+    }
+    
+    .info div h2{
+        font-size: 44px;
+        font-weight: 400;
+    }
+    
+    .info .line{
+        flex: 1;
+        background: #fff;
+        height: 4px;
+    }
+    
+.motor-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px; /* Ajusta estos valores según tus necesidades */
+    border: 1px solid #fff; /* Ajusta este valor según tus necesidades */
+    color: #fff; /* Ajusta este valor según tus necesidades */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+
+}
+
+.motor-link:hover {
+    background-color: #fff; /* Ajusta este valor según tus necesidades */
+    color: #000; /* Ajusta este valor según tus necesidades */
+}
+    
+    @media screen and (max-width: 768px) {
+        .info {
+            flex-direction: row; /* Cambia la dirección de la cuadrícula a la horizontal */
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea cuando no haya suficiente espacio */
+            align-items: center; /* Alinea los elementos al centro del contenedor */
+            padding: 0.3%; /* Reduce el padding para ahorrar espacio */
+            bottom: 10px; /* Reduce el espacio desde el borde inferior para ahorrar espacio */
+          }
+        
+          .info div {
+            margin: 10px; /* Añade un margen alrededor de los elementos para separarlos */
+          }
+        
+          .info div h2 {
+            font-size: 22px; /* Reduce el tamaño de la fuente para que se ajuste mejor */
+          }
+        }

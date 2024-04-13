@@ -1,1 +1,5 @@
-["295447","faf8e5","9cc3b3","8cab95","7da569","72aaa4","c1d4b8","7c7c74","bcbcb4"]
+.color1 {color: #3f7c7d;}
+.color2 {color: #75a895;}
+.color3 {color: #cfd5bd;}
+.color4 {color: #e7ecd9;}
+.color5 {color: #f9f9f4;}
